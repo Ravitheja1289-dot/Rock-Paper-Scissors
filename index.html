@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo1.png">
+</head>
+<body>
+    <div class="mainclass">
+        <h1 class="heading">Choose An Option</h1>
+        <div class="options-all">
+            <div class="options-rock">
+                <button class="option" id="rock" onclick="onRock()">
+                    <img src="raised-fist.svg" alt="" style="background-color: black;"> 
+                    <h2>Rock</h2>   
+                </button>
+            </div>
+            <div class="options-paper">
+                <button class="option" id="paper" onclick="onPaper()">
+                    <img src="hand-with-fingers-splayed-svgrepo-com.svg" alt="" style="background-color: black;"> 
+                    <h2>Paper</h2>   
+                </button>
+            </div>
+            <div class="options-scissor">
+                <button class="option" id="scissor" onclick="onScissors()">
+                    <img src="victory-hand-svgrepo-com.svg" alt="" style="background-color: black;"> 
+                    <h2>Scissors</h2>   
+                </button>
+            </div>
+        </div>
+        <div class="scores">
+            <h4>Your Choice:<span id="playerChoice"></span></h4>
+            <h4>Computer Choice:<span id="computerChoice"></span></h4>
+        </div>
+        <div class="scores">
+            <h4>Your Score:<span id="playerScore"></span></h4>
+            <h4>Computer Score:<span id="computerScore"></span></h4>
+        </div>
+        <div class="scores">
+            <h4>Result:<span id="result"></span></h4>
+        </div>
+    </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
